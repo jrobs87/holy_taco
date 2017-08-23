@@ -1,0 +1,245 @@
+
+@font-face {
+    font-family: 'darwin';
+    src: url(simp.ttf);
+}
+
+* :focus {
+    outline: none;
+}
+
+* {
+    font-family: 'avenir';
+}
+
+body {
+    min-width: 800px;
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#container_one {
+    position: static;
+    z-index: 1100;
+    text-align: center;
+    background-image: url("tacos.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    min-height: 680px;
+}
+
+#arrow {
+    position: absolute;
+    opacity: .4;
+    top: 600px;
+    left: 49%;
+    height: 30px;
+}
+
+#arrow:hover {
+    cursor: pointer;
+    color: #829f42;
+    transition: background-color 0.1s ease-in,
+                color 0.0s ease-out;
+}
+
+/* main nav start */
+
+#origincontainer {
+    max-width: 1600px;
+    margin: auto;
+    background-color: ;
+    width: 100%;
+    z-index: 1100;
+    position: absolute;
+}
+
+#navbarorigin {
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin: auto;
+    
+}
+
+
+.navlink {
+    font-size: 1.5em;
+    color: antiquewhite;
+    align-content: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+#navbar {
+    margin: auto;
+} 
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    background-color: transparent;
+    transition: background 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #B24333;
+    transition: background-color 0.1s ease-in,
+                color 0.0s ease-out;
+}
+
+/* main nav end */
+
+/* sticky nav start */
+#menusticky {
+    visibility: hidden;
+    z-index: 1000;
+    margin: auto;
+    width: 100%;
+    background-color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.em;
+    position: fixed;
+}
+
+/* sticky nav end */
+
+
+#container_two {
+    color: antiquewhite;
+    width: 100%;
+    min-height: 320px;
+    margin: auto;
+    justify-content: space-around;
+    top: 0;
+    width: 70%;
+}
+
+#about {
+    font-size: 1.6em !important;
+    width: 100%;
+}
+
+#about_info {
+    width: 100%;
+}
+
+#detail {
+    padding-top: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+#address tr {
+    text-align: center;
+    margin-top: 0%;
+}
+
+#carouselcontainer {
+    height: 1000px;
+}
+
+#container_three {
+    height: 100%;
+    background-color: black;
+}
+
+footer {
+    background-color: white;
+    height: 150px;
+}
+
+#aboutanchor {
+    display: block;
+    position: relative;
+    top: -30px;
+    visibility: hidden;
+}
+
+/* menu tabs */
+
+.container{
+            max-width: 1000px;
+            font-size: 1.5em;
+			width: 70%;
+            padding-top: 10%;
+			margin: 0 auto;
+		}
+
+
+
+		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+            font-size: 1.2em;
+			background: none;
+			color: antiquewhite;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+ul.tabs li:hover {
+   /*
+    cursor: pointer; */
+    color: #B24333;
+    transition: background-color 0.1s ease-in,
+                color 0.0s ease-out;
+            
+}
+
+.tab-link {
+    transition: background 0.5s ease-out;
+    transition: color 0.5s ease-out;
+            
+}
+
+		ul.tabs li.current{
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+			background-color: antiquewhite;
+			color: #B24333;
+		}
+
+		.tab-content{
+            margin-top: -5px;
+            border-radius: 5px;
+			display: none;
+			background-color: antiquewhite;
+			padding: 15px;
+            box-shadow: 2px 2px 2px black;
+            margin-bottom: 50px;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+
+.menurow {
+    color: black;
+}
+
+.menurow td {
+    vertical-align: baseline;
+    width: 100%;
+}
+
+th {
+    color: #B24333;
+    font-size: 1.4em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* end menu formatting */
