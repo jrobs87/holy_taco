@@ -13,19 +13,19 @@
 }
 
 body {
-    min-width: 800px;
+    min-width: 600px;
     max-width: 1600px;
     margin: auto;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: antiquewhite;
 }
 
 #container_one {
     position: static;
     z-index: 1100;
     text-align: center;
-    background-image: url("tacos.jpg");
+    background-image: url("food4.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
@@ -43,8 +43,8 @@ body {
 #arrow:hover {
     cursor: pointer;
     color: #829f42;
-    transition: background-color 0.1s ease-in,
-                color 0.0s ease-out;
+    transition: background-color 0.4s ease-in,
+                color 0.4s ease-out;
 }
 
 /* main nav start */
@@ -52,7 +52,7 @@ body {
 #origincontainer {
     max-width: 1600px;
     margin: auto;
-    background-color: ;
+    background-color: none;
     width: 100%;
     z-index: 1100;
     position: absolute;
@@ -62,17 +62,17 @@ body {
     margin: auto;
     padding-top: 2%;
     padding-bottom: 1%;
-    margin: auto;
-    
 }
 
 
 .navlink {
-    font-size: 1.5em;
-    color: antiquewhite;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 1.1em;
+    color: whitesmoke;
     align-content: center;
-    padding-left: 4%;
-    padding-right: 4%;
+    
 }
 
 #navbar {
@@ -89,10 +89,13 @@ a {
 }
 
 a:hover {
+    border: solid 2px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
-    color: #B24333;
-    transition: background-color 0.1s ease-in,
-                color 0.0s ease-out;
+    color: #829f42;
+    transition: border-color 0.2s, background-color 0.2s ease-in, font-color 0.1s ease-in 0.2 ease-out;
 }
 
 /* main nav end */
@@ -103,20 +106,20 @@ a:hover {
     z-index: 1000;
     margin: auto;
     width: 100%;
-    background-color: black;
+    background-color: #131315;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 1.em;
+    font-size: 1.0em;
     position: fixed;
 }
 
 /* sticky nav end */
 
 
-#container_two {
-    color: antiquewhite;
+#about {
+    color: #131315;
     width: 100%;
-    min-height: 320px;
+    min-height: 220px;
     margin: auto;
     justify-content: space-around;
     top: 0;
@@ -124,16 +127,27 @@ a:hover {
 }
 
 #about {
-    font-size: 1.6em !important;
-    width: 100%;
+    font-size: 1.em !important;
+    width: 60%;
+}
+
+#map {
+    background-color: blueviolet;
+    height: 160px;;
+}
+
+#container-two {
+    background-color: aqua;
 }
 
 #about_info {
-    width: 100%;
+    margin-top: 60%;
+    margin: auto;
+    width: 60%;
 }
 
 #detail {
-    padding-top: 10%;
+    padding-top: 4%;
     text-align: center;
     width: 100%;
 }
@@ -144,12 +158,15 @@ a:hover {
 }
 
 #carouselcontainer {
-    height: 1000px;
+    padding-bottom: 20px;
+    height: 100%;
+    background-color: #B24333;
 }
 
+
 #container_three {
-    height: 100%;
-    background-color: black;
+    background-color: #B24333;
+    height: 1000px;
 }
 
 footer {
@@ -164,11 +181,25 @@ footer {
     visibility: hidden;
 }
 
+#carouselanchor {
+    display: block;
+    position: relative;
+    top: -20px;
+    visibility: hidden;
+}
+
+#menuanchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
 /* menu tabs */
 
 .container{
             max-width: 1000px;
-            font-size: 1.5em;
+            font-size: 1.2em;
 			width: 70%;
             padding-top: 10%;
 			margin: 0 auto;
@@ -182,7 +213,7 @@ footer {
 			list-style: none;
 		}
 		ul.tabs li{
-            font-size: 1.2em;
+            font-size: 1.0em;
 			background: none;
 			color: antiquewhite;
 			display: inline-block;
@@ -193,7 +224,7 @@ footer {
 ul.tabs li:hover {
    /*
     cursor: pointer; */
-    color: #B24333;
+    color: #131315;
     transition: background-color 0.1s ease-in,
                 color 0.0s ease-out;
             
@@ -220,6 +251,7 @@ ul.tabs li:hover {
 			padding: 15px;
             box-shadow: 2px 2px 2px black;
             margin-bottom: 50px;
+            font-size: 0.8em;
 		}
 
 		.tab-content.current{
@@ -236,10 +268,29 @@ ul.tabs li:hover {
 }
 
 th {
-    color: #B24333;
+    color: #131315;
     font-size: 1.4em;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
 /* end menu formatting */
+
+.slide {
+    margin-bottom: 2%;
+    width: 100%;
+    height: 30%;
+    box-shadow: 2px 2px 2px black;
+}
+
+.slick-prev {
+    z-index: 1;
+    left: 4% !important;
+    background-color: none  !important; /*to notice it, is white*/
+}
+.slick-next {
+    z-index: 1;
+    right: 4% !important;
+    background-color: none;  !important; /*to notice it, is white*/
+}
+

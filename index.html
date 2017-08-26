@@ -4,9 +4,10 @@
 <head>
     <title>Welcome to the Holy Taco</title>
     <link rel= "stylesheet" href="styles.css">
-    
-    
-</head>    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>  
+
 <body>
  
 <div id="container_one">
@@ -14,8 +15,8 @@
     <table id="navbarorigin">
         <tr>
             <td><a class="navlink" href="#aboutanchor">about</a></td>
-            <td><a class="navlink" href="">gallery</a></td>
-            <td><a class="navlink" href="">menu</a></td>
+            <td><a class="navlink" href="#carouselanchor">gallery</a></td>
+            <td><a class="navlink" href="#menuanchor">menu</a></td>
             <td><a class="navlink" href="">praise</a></td>
             
         </tr>
@@ -26,8 +27,8 @@
     <table id="navbar">
         <tr>
             <td><a class="navlink" href="#aboutanchor">about</a></td>
-            <td><a class="navlink" href="">gallery</a></td>
-            <td><a class="navlink" href="">menu</a></td>
+            <td><a class="navlink" href="#carouselanchor">gallery</a></td>
+            <td><a class="navlink" href="#menuanchor">menu</a></td>
             <td><a class="navlink" href="">praise</a></td>
             
         </tr>
@@ -61,19 +62,26 @@
                           
         
         </table> 
-        
+        <div id="map"></div>
                    
         </div>
     </div>
-    
-<div id="carouselcontainer">
-    
-    hello</div>    
+    <a id="carouselanchor">anchor</a> 
+    <div id="carouselcontainer">
+        
+        <div class="caro">
+        <div> <img class="slide" src="food2.jpg"></div>
+        <div> <img class="slide" src="food2.jpg"></div>
+        <div> <img class="slide" src="food2.jpg"></div>
+        <div> <img class="slide" src="food2.jpg"></div>
+        <div> <img class="slide" src="food2.jpg"></div>
+  </div>
+</div>    
     
 <div id="container_three">
-    
-<div class="container">
 
+<div class="container">
+<a id="menuanchor">anchor</a> 
 	<ul class="tabs">
 		<li class="tab-link current" data-tab="tab-1">apertivos</li>
 		<li class="tab-link" data-tab="tab-2">mains</li>
@@ -258,9 +266,28 @@
     </footer>    
     
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="tabs.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="tabs.js"></script>
+
     
-<script type="text/javascript">
+    
+<script> // initialize slides
+$(document).ready(function(){
+    $('.caro').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    infinite: true,
+    accessibility: true
+      });
+    });
+</script>
+
+<script type="text/javascript"> // menu sticky appear
 (function($) {          
     $(document).ready(function(){                    
         $(window).scroll(function(){
@@ -272,7 +299,7 @@
 })(jQuery);
 </script>
     
-<script type="text/javascript">
+<script type="text/javascript">  // sticky nav menu fade
 (function($) {          
     $(document).ready(function(){                    
         $(window).scroll(function(){
@@ -286,7 +313,7 @@
 })(jQuery);
 </script>
 
-<script>
+<script> // smooth scroll jquery
  $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -312,6 +339,8 @@
   });
 });
 </script>
+    
+
         
 
 
