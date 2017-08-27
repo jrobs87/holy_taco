@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'darwin';
-    src: url(simp.ttf);
+    src: url(mensch.ttf);
 }
 
 * :focus {
@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'avenir';
+    font-family: 'darwin';
 }
 
 body {
@@ -25,11 +25,21 @@ body {
     position: static;
     z-index: 1100;
     text-align: center;
-    background-image: url("food4.jpg");
+    background-image: url("patio.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
     min-height: 680px;
+}
+
+#logo {
+    color: antiquewhite;
+    opacity: 0.85;
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    margin-left: 20%;
+    font-size: 8em;
 }
 
 #arrow {
@@ -43,8 +53,8 @@ body {
 #arrow:hover {
     cursor: pointer;
     color: #829f42;
-    transition: background-color 0.4s ease-in,
-                color 0.4s ease-out;
+    transition: background-color 0.2s ease-in,
+                color 0.2s ease-out;
 }
 
 /* main nav start */
@@ -66,11 +76,11 @@ body {
 
 
 .navlink {
+    padding-left: 8px;
+    padding-right: 8px;
     padding-bottom: 2px;
-    padding-left: 12px;
-    padding-right: 12px;
-    font-size: 1.1em;
-    color: whitesmoke;
+    font-size: 1em;
+    color: antiquewhite;
     align-content: center;
     
 }
@@ -84,15 +94,11 @@ a {
     text-decoration: none;
     font-size: 1.1em;
     background-color: transparent;
-    transition: background 0.5s ease-out;
-    transition: color 0.5s ease-out;
+    transition: background 0.2s ease-out;
+    transition: color 0.2s ease-out;
 }
 
 a:hover {
-    border: solid 2px;
-    border-radius: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
     cursor: pointer;
     color: #829f42;
     transition: border-color 0.2s, background-color 0.2s ease-in, font-color 0.1s ease-in 0.2 ease-out;
@@ -129,11 +135,13 @@ a:hover {
 #about {
     font-size: 1.em !important;
     width: 60%;
+    margin-bottom: 200px;
 }
 
-#map {
-    background-color: blueviolet;
-    height: 160px;;
+#mappic {
+    padding-top: 5%;
+    margin: auto;
+    width: 50%;
 }
 
 #container-two {
@@ -143,10 +151,11 @@ a:hover {
 #about_info {
     margin-top: 60%;
     margin: auto;
-    width: 60%;
+    width: 70%;
 }
 
 #detail {
+    font-size: 1.2em;
     padding-top: 4%;
     text-align: center;
     width: 100%;
@@ -160,12 +169,12 @@ a:hover {
 #carouselcontainer {
     padding-bottom: 20px;
     height: 100%;
-    background-color: #B24333;
+    background-color: ;
 }
 
 
 #container_three {
-    background-color: #B24333;
+    background-color: ;
     height: 1000px;
 }
 
@@ -205,8 +214,6 @@ footer {
 			margin: 0 auto;
 		}
 
-
-
 		ul.tabs{
 			margin: 0px;
 			padding: 0px;
@@ -214,8 +221,8 @@ footer {
 		}
 		ul.tabs li{
             font-size: 1.0em;
-			background: none;
-			color: antiquewhite;
+			background-color: white;
+			color: black;
 			display: inline-block;
 			padding: 10px 15px;
 			cursor: pointer;
@@ -239,7 +246,7 @@ ul.tabs li:hover {
 		ul.tabs li.current{
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
-			background-color: antiquewhite;
+			background-color: white;
 			color: #B24333;
 		}
 
@@ -247,10 +254,10 @@ ul.tabs li:hover {
             margin-top: -5px;
             border-radius: 5px;
 			display: none;
-			background-color: antiquewhite;
+			background-color: white;
 			padding: 15px;
-            box-shadow: 2px 2px 2px black;
-            margin-bottom: 50px;
+            box-shadow: 2px 2px 2px darkgrey;
+            margin-bottom: 20px;
             font-size: 0.8em;
 		}
 
@@ -268,10 +275,16 @@ ul.tabs li:hover {
 }
 
 th {
-    color: #131315;
+    color: #829f42;
     font-size: 1.4em;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.menunotes {
+    text-align: center;
+    color: orangered;
+    font-size: 0.8em;
 }
 
 /* end menu formatting */

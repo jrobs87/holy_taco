@@ -36,7 +36,7 @@
         </div>
 <!-- end of the sticky nav -->        
     
-    <div id="logo"></div>
+    <div id="logo">holy taco</div>
     
     <img id="arrow" src="arrow.png">
     
@@ -47,9 +47,12 @@
     <div id="about">
             <table id="about_info">
                 <tr>
+                    
                     <td id="detail">
-                        <p>The Holy Taco is a taqueria focused on sustainable local ingredients located in East Atlanta with an ever-changing and evolving menu.
+                        <hr />
+                        <p><b>The Holy Taco</b> is a taqueria focused on sustainable local ingredients located in East Atlanta with an ever-changing and evolving menu.
                          A modern Mexican eatery, we showcase a seasonal, locally-influenced menu.</p>
+                         <hr />
                      </td>
               <td>
                        <!-- <table id="address">
@@ -62,7 +65,9 @@
                           
         
         </table> 
-        <div id="map"></div>
+        <div id="map">
+            <img id="mappic" src="map.png">
+        </div>
                    
         </div>
     </div>
@@ -260,6 +265,14 @@
 	</div>
     </div>
     
+     <div class="menunotes">
+        We support organic, sustainable farms and fisheries.</div>
+    <div class="menunotes">
+        Consumption of raw or undercooked foods can be hazardous to your health.</div>
+    <div class="menunotes">
+        *these foods may be served raw or under cooked
+    </div>
+    
     </div> 
 <footer>
     
@@ -330,7 +343,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 1000, function(){
+      }, 600, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
